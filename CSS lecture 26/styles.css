@@ -1,0 +1,113 @@
+#navList{
+    width: 100%;
+    padding: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient( 179.7deg,  rgba(249,21,215,1) 1.1%, rgba(22,0,98,1) 99% );
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navContainer{
+    width: 738px;
+    height: 100px;
+    background-color: rgb(135, 65, 226);
+    margin: 2px;
+    padding: 10px;
+
+}
+.container{
+    width: 745px;
+    height: 710px;
+    overflow-x: none;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+}
+#BrandName{
+    font-size: 50px;
+    color: white;
+}
+a{
+    /* To remove underline */
+    text-decoration: none;
+    color: black;
+}
+#navItems{
+    display: flex;
+    gap: 10px;
+}
+.footerBox{
+    background-color: rgb(62, 178, 199);
+    width: 99%;
+    text-align: center;
+    height: 30px;
+
+}
+.footerBox p{
+    font-size: 20px;
+    color: azure;
+}
+.contentBox{
+    width: 85%;
+    /* height: 100%; */
+    /* margin=auto , to bring contentbox to center of the container */
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px;
+}
+.Item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+.rightBox img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    transition: all 0.6s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.2);
+    
+}
+.rightBox.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+}
+.ingBox{
+    font-size: 13px;
+}
+.recipeBox{
+    font-size: 13px;
+}

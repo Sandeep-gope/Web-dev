@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* To understand the concept of align items */
+        .container{
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            height: 700px;
+            align-items: start;
+            /* It will move the contents to the next line , when squeezed */
+            flex-wrap: wrap;
+            /* Use of align content to reduce the gap between the items */
+            align-content: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            /* To understand the concept of flex shrink */
+            background-color: aqua;
+            order: 100;
+            flex-shrink: 4;
+            }
+        #box2{
+            /* To understand the concept of flex grow */
+            background-color: rgb(34, 34, 177);
+            flex-grow: 4;
+        }
+        #box3{
+            background-color: rgb(215, 147, 22);
+        }
+        #box4{
+            background-color: brown;
+            order: -2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>

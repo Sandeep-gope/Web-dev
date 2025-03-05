@@ -1,0 +1,37 @@
+.box{
+    width: 300px;
+    height: 250px;
+    background-color: beige;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    transition: all 3s linear 1s;
+}
+.container{
+    width: 700px;
+    height: 600px;
+    border: 2px solid black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transform: rotate(45deg);
+
+    /* Increase and decrease of size, default size is 1 */
+    transform: scale(2);
+
+    /* To tilt(skew) the box, -ve value can also be used */
+    transform: skew(45deg);
+
+    /* To translate or to move the box in x-y or inclined direction */
+    /* For -ve value of x , it's direction will be decided but opposite for y */
+    transform: translate(50px,50px);
+}
+p{
+    font-size: 25px;
+}

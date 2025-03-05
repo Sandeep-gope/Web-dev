@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: var(--primary-color);
+            border: 2px solid var(--custom-width);
+            width: 400px;
+            margin: 2px;
+            padding: 2px;
+            height: 330px;
+
+            /* Adding shadow to the box with only x-axis and y-axis */
+            box-shadow: 10px 15px greenyellow;
+
+            /* Adding shadow to the box with x-axis, y-axis and blur */
+            /* box-shadow: 10px 15px 5px purple; */
+
+            /* Adding shadow to the box with x-axis, y-axis, blur and spread */
+            /* box-shadow: 10px 15px 5px 6px blue; */
+
+            /* Adding inset shadow */
+            /* box-shadow: inset 10px 15px black; */
+
+            /* Adding multiple shadows */
+            /* box-shadow: 10px 15px yellow 5px 20px red; */
+        /* } */
+        img{
+            width: 100px;
+        }
+        #head1{
+            text-shadow: 2px 3px 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Maharana_Pratap_By_Surendra_Singh_Shaktawat.jpg/330px-Maharana_Pratap_By_Surendra_Singh_Shaktawat.jpg" alt="">
+        <h2 id="head1">Welcome to Sandeep's Home</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quos? Vel repudiandae quibusdam incidunt quod obcaecati suscipit debitis architecto! Minima nisi dolorem itaque! Eius, obcaecati!</p>
+        </div>
+    </div>
+</body>
+</html>

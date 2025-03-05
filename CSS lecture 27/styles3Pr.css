@@ -1,0 +1,50 @@
+.container{
+    width: 720px;
+    height: 670px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentbox{
+    width: 75%;
+    height: 48%;
+    background-color: rgb(195, 48, 190);
+    border: 8px solid gray;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+}
+
+.leftbox{
+    width: 50%;
+    height: 100%;
+    padding: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.statusbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+/* .rightbox{
+    width: 200px;
+} */
+
+img{
+    width: 270px;
+    height: 100%;
+}
+
+#number{
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+#unit{
+    font-size: small;
+}

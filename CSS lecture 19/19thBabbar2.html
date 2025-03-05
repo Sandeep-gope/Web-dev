@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* To understand the concept of (the great collapse) */
+        .container{
+            border: 2px solid black;
+            overflow: auto;
+        }
+        #item1{
+            border: 1px solid brown;
+            margin: 2px;
+            width: 10%;
+            height: 90px;
+            background-color: bisque;
+            float: left;
+        }
+        #item2{
+            border: 1px solid brown;
+            margin: 2px;
+            width: 10%;
+            height: 90px;
+            background-color: bisque;
+            float: right;
+        }
+        #item3{
+            border: 1px solid brown;
+            margin: 2px;
+            width: 10%;
+            height: 90px;
+            background-color: bisque;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+</body>
+</html>

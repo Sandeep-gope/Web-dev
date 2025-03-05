@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+        }
+         .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: beige;
+        }
+        #box2{
+            background-color: rgb(181, 105, 13);
+        }
+        #box3{
+            background-color: rgb(151, 202, 13);
+        }
+        #box4{
+            background-color: rgb(232, 47, 238);
+        }
+        /* Using media assign row or column according to the size of the screen */
+        @media(min-width:640px){
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media(max-width:640px){
+            .container{
+                flex-direction: column;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

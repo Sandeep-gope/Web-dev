@@ -1,0 +1,430 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    padding: 10px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 700px;
+}
+.headcontent{
+    /* width: 700px; */
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(225, 121, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoicon{
+    width: 40px;
+    border-radius: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotext{
+    padding-left: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.navcontent{
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.navlink{
+    color: black;
+}
+
+.contactbutton{
+    height: 20px;
+    border: 2px solid none;
+    padding: 6px;
+    background-color: cadetblue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.contactpara{
+    color: white;
+}
+
+.contactbutton:hover{
+    background-color: blueviolet;
+}
+
+.navlink:hover{
+    color: skyblue;
+}
+
+.content{
+    width: 700px;
+    padding-top: 20px;
+}
+
+.mainsection{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftsection{
+    width: 45%;
+    height: 40%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    animation: slidefromleft 4s ease forwards;
+}
+
+@keyframes slidefromleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.button{
+    padding-top: 20px;
+    gap: 3px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.rightsection{
+    width: 50%;
+}
+
+.label{
+    font-weight: bold;
+    color: rgb(55, 103, 200);
+}
+
+.sectionimage{
+    width: 330px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.startnow{
+    color: white;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: rgb(78, 78, 181);
+}
+
+.taketour{
+    color: white;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: rgb(69, 64, 64);
+}
+
+.startnow:hover{
+    background-color: blue;
+}
+
+.taketour:hover{
+    background-color: rgb(18, 5, 5);
+}
+
+.companycontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    animation: slidefromleft 4s ease forwards;
+}
+
+.company{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* display: flex; */
+    gap: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+@keyframes slidefromleft{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.icon{
+    width: 25px;
+    border-radius: 10px;
+}
+
+.companylogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotxt{
+    color: rgb(81, 131, 173);
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+@media screen and (min-width:715px){
+    .company{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.featurecontainer{
+    margin-top: 10px;
+    width: 700px;
+}
+
+.featurecontent{
+    width: 700px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureup{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.featurepara{
+    width: 620px;
+    margin-top: -4px;
+}
+
+.featuredown{
+    /* margin-right: -20px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.featurebox{
+    margin: 10px;
+    width: 300px;
+    height: 170px;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.featimg{
+    width: 40px;
+    border-radius: 20px;
+}
+
+#blue{
+    background-color: lightskyblue;
+}
+
+#pink{
+    background-color: rgb(203, 85, 191);
+}
+
+#yellow{
+    background-color: rgb(156, 185, 12);
+}
+
+#midblue{
+    background-color: rgb(13, 167, 167);
+}
+
+#green{
+    background-color: rgb(55, 128, 10);
+}
+
+#violet{
+    background-color: rgb(89, 37, 117);
+}
+
+/* @media screen and (min-width: 715px){
+    .featuredown{
+        grid-template-columns: repeat(1,1fr);
+    }
+} */
+
+.testimonicontainer{
+    /* width: 700px; */
+    margin-top: -20px;
+    text-align: center;
+}
+
+.testimonicontent{
+    /* width: 800px; */
+    padding: 10px;
+}
+
+.testimoniflex{
+    display: flex;
+    gap: 10px;
+}
+
+.testboxname{
+    width: 50px;
+    height: 50px;
+    margin-bottom: -15px;
+    border-radius: 40px;
+}
+
+.testimonibox{
+    width: 380px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.testboxoccu{
+    margin-top: -25px;
+}
+
+.occukeuppar{
+    color: rgb(27, 27, 172);
+}
+
+.newslettercontent{
+    display: flex;
+    width: 800px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.newsleft{
+    width: 50%;
+}
+
+.newsright{
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.newsimg{
+    height: 250px;
+}
+
+.newsr3{
+    font-size: 12px;
+}
+
+.latest{
+    margin-bottom: -15px;
+    color: blue;
+}
+
+.newsr1{
+    margin-bottom: -10px;
+}
+
+.send{
+    color: white;
+    background-color: blue;
+}
+
+.a1{
+    font-size: 12px;
+    color: rgb(70, 34, 228);
+    text-decoration: underline;
+}
+
+.footercontainer{
+    margin-top: 10px;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.RHS{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.footsync{
+    display: flex;
+    gap: 5px;
+    margin-bottom: -20px;
+    align-items: center;
+}
+
+.foothead{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footimg{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.footicons{
+    display: flex;
+    gap: 7px;
+}
+
+.footiconwala{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.sbseniche{
+    font-size: small;
+    text-align: center;
+}

@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: azure; */
+    padding: 10px;
+    text-align: center;
+}
+.header-content{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    /* By writing margin (0 and auto) we bought the contents in the centre of the page */
+    margin: 0 auto;
+}
+.logo{
+    padding: 3px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+.logo-icon{
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+}
+.nav{
+    display: none;
+    gap: 12px;
+    margin-top: 10px;
+    color: black;
+}
+@media screen and (min-width:648px){
+    .nav{
+        display: flex;
+    }
+}
+.nav-link{
+    color: black;
+    font-size: 14px;
+}
+.nav-link:hover{
+    color: aqua;
+}
+.contact-button{
+    display: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(102, 102, 214);
+    display: flex;
+    /* color: white; */
+    padding: 4px 5px;
+    margin-top: 6px;
+    /* color: black; */
+    font-size: 15px;
+    font-weight: 20px;
+}
+.contact-para{
+    color: white;
+}
+@media screen and (max-width:648px){
+    .contact-button{
+        display: flex;
+        opacity: 0;
+    }
+}
+.contact-button:hover{
+    background-color: blue;
+}
+.main-section{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.content-left{
+    text-align: center;
+    animation: slideFromLeft 3s ease forwards;
+    opacity: 0;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100);
+    }
+    50%{
+        opacity: 0.7;
+        transform: translateX(-20);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.section-label{
+    margin-top: 40px;
+    font-weight: bold;
+    color: rgb(64, 64, 162);
+}
+.section-title{
+    /* display: flex;
+    justify-content: center; */
+    /* width: 400px; */
+    /* padding: 10px; */
+    text-align: center;
+}
+.section-description{
+    color: rgb(72, 68, 68);
+}
+.button-group{
+   display: flex;
+   justify-content: center;
+   margin-top: 12px;
+}
+.start-button{
+    margin-right: 4px;
+}
+.start-button, .tour-button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(102, 102, 214);
+    display: flex;
+    color: white;
+    padding: 4px 5px;
+    margin-top: 6px;
+    /* color: black; */
+    font-size: 15px;
+    font-weight: 20px;
+}
+.tour-button{
+    background-color: rgb(82, 79, 79);
+}
+.start-button:hover{
+    background-color: blue;
+}
+.tour-button:hover{
+    background-color: grey;
+}
+.section-image{
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+@media screen and (min-width: 648px){
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    .button-group{
+        justify-content: start;
+    }
+    .section-title{
+        padding-left: 0px;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-label{
+        margin-top: -10px;
+    }
+    .section-image{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and(max-width: 648px){
+    .section-title{
+        overflow: scroll;
+    }
+    .section-description{
+        overflow: scroll;
+    }
+}
+.comapny-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    animation: slideFromLeft 1s ease forwards;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.6rem;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.8rem 2.5rem;
+}
+
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.svg-img{
+    height: 1.56rem;
+}
+.logo-text{
+    font-size: 16px;
+}
+@media screen and (min-width:640px) {
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .company-title{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+}
+.feature-container{
+    background-color: rgb(211, 205, 205);
+    margin-top: 50px;
+    padding: 1.2rem;
+    text-align: center;
+    width: 100%
+}
+.feature-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.icon-container{
+
+}
+.feature-svg{
+    width: 50px;
+    height: 50px;
+}

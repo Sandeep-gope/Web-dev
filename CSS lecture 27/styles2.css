@@ -1,0 +1,88 @@
+.container{
+    width: 730px;
+    height: 700px;
+    background-color: rgb(247, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.headpara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+#textBox{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+}
+.leftBox{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ImgBox{
+    width: 30px;
+    height: 70px;
+}
+.AmtBox{
+    /* width: 50%; */
+    height: 50%;
+    /* background-color: ;
+    border-radius: ; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.rightBox{
+
+}
+#paybutton{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+    color: white;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgb(79, 67, 67);
+}
+.cancelBox{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+/* .leftBox{
+    width: 30px;
+    height: 70px;
+} */
+img{
+    border-radius: 10px;
+}
