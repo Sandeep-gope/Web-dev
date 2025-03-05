@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(222, 177, 196);
+    border: 3px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    /* width: 600px; */
+}
+
+h1{
+    background-color: rgb(151, 66, 204);
+        border-radius: 5px;
+        text-align: center;
+}
+
+.imp{
+    display: flex;
+    gap: 10px;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+    height: 250pxS;
+    border-radius: 20px;
+}
+
+.img-para{
+    width: 200px;
+    height: 200px;
+    margin-top: -14px;
+    margin-left: 5px;
+}
+
+.img-para1{
+    font-style: oblique;
+}
+
+h2{
+    color: rgb(83, 28, 28);
+}
+
+.in-para{
+    font-size: 20px;
+    color: blue;
+}
+
+footer{
+    background-color: chartreuse;
+    width: 200px;
+    height: 50px;
+}
+
+button{
+    color: rgb(50, 29, 14);
+    width: 200px;
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 50px;
+    border: 2px double blue;
+}

@@ -1,0 +1,26 @@
+.container{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: brown;
+    border: 10px solid blue;
+
+}
+
+.separate{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border: 10px solid blue;
+}
+
+#parent{
+    width: 800px;
+    height: 800px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
